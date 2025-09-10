@@ -91,7 +91,7 @@ class AbrigoAnimais{
       }
       return true;
     }
-    return this.verificarSequencia(brinquedosFavoritos, brinquedosPessoa)
+    return this.subsequencia(brinquedosFavoritos, brinquedosPessoa)
   }
   
 
@@ -125,7 +125,7 @@ class AbrigoAnimais{
   }
 
 
-  verificarSequencia(array1, array2) {
+  subsequencia(array1, array2) {
     let i = 0;
     let j = 0;
 

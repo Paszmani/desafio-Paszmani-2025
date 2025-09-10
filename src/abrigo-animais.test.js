@@ -63,4 +63,9 @@ describe('Abrigo de Animais', () => {
       expect(resultado.erro).toBeFalsy();
   });
 
+  test('Deve rejeitar brinquedo duplicado', () => {
+    const resultado = new AbrigoAnimais().encontraPessoas('BOLA,BOLA', 'RATO,RATO', 'Rex');
+    expect(resultado.erro).toBe('Brinquedo inválido');
+    expect(resultado.lista).toBeFalsy();
+  });
 });
